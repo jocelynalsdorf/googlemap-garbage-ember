@@ -7,7 +7,9 @@ var Router = Ember.Router.extend({
 
 Router.map(function() {
 	this.resource('home', {path:'/'});
-	this.resource('users');
+	this.resource('users', function(){
+		this.resource('user', {path: 'user/:number'});
+	});
 });
 
 export default Router;

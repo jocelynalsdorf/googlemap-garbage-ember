@@ -1,0 +1,13 @@
+<h1>User Lookup</h1>
+
+<form>
+  <div class="form-group">
+    <label for="number">Number of Users</label>
+    {{input value=number id="number" size="34" placeholder="Enter number of mock-users you need"}}
+  </div>
+
+  <button class="btn btn-success" {{action 'submit'}}>Submit</button>
+</form>
+
+
+{{outlet}}
