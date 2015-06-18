@@ -1,0 +1,16 @@
+h1{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	color: navy;
+}
+
+
+.navbar-default .navbar-brand {
+	color: navy;
+	font-family: 'Montserrat', sans-serif;
+
+}
+
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+	color: green;
+}
