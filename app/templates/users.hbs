@@ -5,6 +5,10 @@
     <label for="number">Number of Users</label>
     {{input value=number id="number" size="34" placeholder="Enter number of mock-users you need"}}
   </div>
+  <div class="form-group">
+    <label for="gender">Gender of Users</label>
+    {{input value=gender id="gender" size="37" placeholder="Enter gender of mock-users: male or female"}}
+  </div>
 
   <button class="btn btn-success" {{action 'submit'}}>Submit</button>
 </form>
