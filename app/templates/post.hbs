@@ -1,0 +1,28 @@
+<h1>{{model.title}}</h1>
+
+
+<h3>Here is the info on this post:</h3>
+
+{{#if isEditing}}
+  <form>
+    <div class="form-group">
+      <label for="title">Enter your post title:</label>
+      {{input value=model.title id="title"}}
+    </div>
+    <div class="form-group">
+      <label for="body">Enter the post body:</label>
+      {{input value=model.body id="body"}}
+    </div>
+    <button class="btn btn-primary" {{action 'save'}}>Submit</button>
+  </form>
+
+{{else}}
+  <div class="well">
+  
+    <p><span class="bold">title: </span> {{model.title}}</p>
+    <p><span class="bold">post body: </span> {{model.body}}</p>
+  </div>
+
+  <button class="btn btn-primary" {{action 'edit'}}>Edit Post</button>
+  <button class="btn btn-primary" {{action 'delete' model.id}}>Delete Post</button>
+  {{/if}}

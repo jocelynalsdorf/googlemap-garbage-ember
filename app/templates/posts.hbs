@@ -1,0 +1,25 @@
+<h2>Welcome to posts</h2>
+
+<h2>New Post</h2>
+<ul class="post-publish">
+  <li>
+    {{input value=title placeholder="Title"}}
+  </li>
+  <li>
+    {{textarea value=body placeholder="Body"}}
+  </li>
+  <li>
+    <button {{action "publishPost"}}>Publish</button>
+  </li>
+</ul>
+
+
+<section>
+{{#each post in model}}
+  <div>{{#link-to 'post' post.id}}{{post.title}}{{/link-to}}</div>
+  
+{{/each}}
+</section>
+
+{{outlet}}
+

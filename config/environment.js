@@ -4,6 +4,7 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'emb-app',
     environment: environment,
+    firebase: 'https://popping-torch-6088.firebaseio.com/',
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
