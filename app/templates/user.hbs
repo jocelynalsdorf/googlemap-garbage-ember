@@ -1,5 +1,5 @@
 <ul>
   {{#each user in model}}
-    <li><span class="users-info"> <img {{bind-attr src=user.user.picture.thumbnail}}> {{user.user.name.first}} {{user.user.email}} </span><br> <br> </li>
+    <li><span class="users-info"> <img {{bind-attr src=user.user.picture.thumbnail}}> NAME: {{user.user.name.first}} EMAIL: {{user.user.email}} </span><br> <br> </li>
   {{/each}}
 </ul>
