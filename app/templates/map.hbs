@@ -1,0 +1,16 @@
+<ul>
+  {{#each address in model}}
+    <li><span class="maps-info"> 
+    Northeast: 
+    Lat: {{address.geometry.viewport.northeast.lat}} <br>
+    Long: {{address.geometry.viewport.northeast.lng}} <br><br>
+    SouthWest: 
+    Lat: {{address.geometry.viewport.southwest.lat}} <br>
+    Long: {{address.geometry.viewport.southwest.lng}} <br><br>
+    </span><br> <br> </li>
+  {{/each}}
+</ul>
+
+
+
+

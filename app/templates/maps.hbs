@@ -1,0 +1,27 @@
+<h1>Address Lookup</h1>
+
+<form>
+  <div class="form-group">
+    <label for="addNum">Street Address Number</label>
+    {{input value=addNum id="addNum" size="34" placeholder="Enter street number of address"}}
+  </div>
+  <div class="form-group">
+    <label for="addStreet">Street Name</label>
+    {{input value=addStreet id="addStreet" size="37" placeholder="Enter street name"}}
+  </div>
+
+  <div class="form-group">
+    <label for="addCity">City Name</label>
+    {{input value=addCity id="addCity" size="37" placeholder="Enter city name"}}
+  </div>
+
+  <div class="form-group">
+    <label for="addState">State Name</label>
+    {{input value=addState id="addState" size="37" placeholder="Enter state abbreviation in caps"}}
+  </div>
+
+  <button class="btn btn-success" {{action 'submit'}}>Submit</button>
+</form>
+
+
+{{outlet}}

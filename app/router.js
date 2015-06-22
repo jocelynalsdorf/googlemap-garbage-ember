@@ -14,6 +14,9 @@ Router.map(function() {
   this.resource('posts', function(){
   	this.resource('post', {path: 'posts/:id'});
   });
+  this.resource('maps', function(){
+  	this.resource('map', {path: 'map/:addNum/:addStreet/:addCity/:addState'})
+  });
 });
 
 export default Router;
