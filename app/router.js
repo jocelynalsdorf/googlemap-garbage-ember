@@ -15,7 +15,7 @@ Router.map(function() {
   	this.resource('post', {path: 'posts/:id'});
   });
   this.resource('maps', function(){
-  	this.resource('map', {path: 'map/:addNum/:addStreet/:addCity/:addState'})
+  	this.resource('map', {path: 'map/:addNum/:addStreet/:addCity/:addState'});
   });
 });
 

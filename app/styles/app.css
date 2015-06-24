@@ -19,3 +19,8 @@ ul {
 	list-style: none;
 	padding-top:20px;
 }
+
+#map-canvas {
+	height: 500px;
+	width:500px;
+}

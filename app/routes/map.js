@@ -8,8 +8,17 @@ export default Ember.Route.extend({
      var addresses = [];
      responseJSON.results.forEach(function(address) {
        addresses.push(address);
+        // var lat = [address.geometry.viewport.northeast.lat, address.geometry.viewport.northeast.lng];
      });
-     return addresses;
+     
+     map = new google.maps.Map(document.getElementById('map-canvas'), {
+          zoom: 15,
+          center: {lat:  addresses[0].geometry.location.lat, lng:  addresses[0].geometry.location.lng}
+      });
+
+
+ // console.log(addresses[0].geometry.location.lng);
+    
    });
   }
 });
